@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QuestionServlet</servlet-name>
+    <servlet-class>com.exam.action.QuestionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PaperServlet</servlet-name>
+    <servlet-class>com.exam.action.PaperServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getListServlet</servlet-name>
+    <servlet-class>com.exam.action.getListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getPaperList</servlet-name>
+    <servlet-class>com.exam.action.getPaperList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>joinPaper</servlet-name>
+    <servlet-class>com.exam.action.joinPaper</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getAnswer</servlet-name>
+    <servlet-class>com.exam.action.getAnswer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getPointTree</servlet-name>
+    <servlet-class>com.exam.action.getPointTree</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.exam.action.loginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getUserInfo</servlet-name>
+    <servlet-class>com.exam.action.getUserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.exam.action.test</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.exam.action.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getUserList</servlet-name>
+    <servlet-class>com.exam.action.getUserList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateUserServlet</servlet-name>
+    <servlet-class>com.exam.action.updateUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteUserServlet</servlet-name>
+    <servlet-class>com.exam.action.deleteUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PointManager</servlet-name>
+    <servlet-class>com.exam.action.PointManager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueManager</servlet-name>
+    <servlet-class>com.exam.action.QueManager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PaperManager</servlet-name>
+    <servlet-class>com.exam.action.PaperManager</servlet-class>
+  </servlet>
+
+
+
+  <filter>
+  	<filter-name>CharsetFilter</filter-name>
+  	<filter-class>com.exam.filter.CharsetFilter</filter-class>
+  </filter>
+  
+
+	<filter-mapping>
+		<filter-name>CharsetFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+ 
+ 
+  <servlet-mapping>
+    <servlet-name>QuestionServlet</servlet-name>
+    <url-pattern>/QuestionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PaperServlet</servlet-name>
+    <url-pattern>/PaperServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getListServlet</servlet-name>
+    <url-pattern>/getListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getPaperList</servlet-name>
+    <url-pattern>/getPaperList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>joinPaper</servlet-name>
+    <url-pattern>/joinPaper</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getAnswer</servlet-name>
+    <url-pattern>/getAnswer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getPointTree</servlet-name>
+    <url-pattern>/getPointTree</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getUserInfo</servlet-name>
+    <url-pattern>/getUserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getUserList</servlet-name>
+    <url-pattern>/getUserList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateUserServlet</servlet-name>
+    <url-pattern>/updateUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteUserServlet</servlet-name>
+    <url-pattern>/deleteUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PointManager</servlet-name>
+    <url-pattern>/PointManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueManager</servlet-name>
+    <url-pattern>/QueManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PaperManager</servlet-name>
+    <url-pattern>/PaperManager</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

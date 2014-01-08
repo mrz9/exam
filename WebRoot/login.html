@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录页面</title>
+
+<style>
+#top{text-align:center; margin-top:100px;}
+#heads{width:300px; height:40px; background:#000;text-align:center; margin:0 auto;}
+#lines{width:300px; height:10px; background:#F60;margin:0 auto;}
+#forms{width:300px; height:200px; text-align:center;  margin:0 auto;}
+#btnb{float:right}
+#pass2{text-align:right;}
+#error{color:red;display:none;}
+.btn{ height:38px; width:100px; border:none;color:#fff; font-weight:400; background:#06F; font-size:20px; font-family:"微软雅黑"}
+.text_0{ height:38px; width:150px; border:none;font-weight:400;  font-size:30px; font-family:"微软雅黑"; color:#FFF; }
+.text_1{ height:38px; width:200px; border:none;font-weight:400;  font-size:20px; font-family:"微软雅黑"}
+.text_2{ height:38px; width:60px; border:none;color:#999; font-size:14px; font-weight:400;font-family:"微软雅黑"}
+.text{height:20px; width:200px;}
+</style>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript">
+$(document).ready(  function(){});
+function docheck(){
+	alert("begin");
+	 $.ajax({
+   		type:"post",
+   		url:"loginServlet",
+   		data:$('#loginform').serialize(),
+   		dataType:"text",
+   		/* success:function(data,textStatus){
+   			alert(data);
+   		} */
+   		});
+   		alert("end");
+};
+	
+
+/* $.ajax({
+   		type:"GET",
+   		url:"userSevlet",
+     	contentType: "application/json; charset=utf-8", 
+   		dataType:"json",
+   		success:function(data,textStatus){
+   			alert(data);
+   		} */
+</script>
+</head>
+
+<body style="text-align:center;">
+	<div id="top">
+    	<div id="heads">
+        	<span class="text_0">用户登录</span>
+        </div>
+        <div id="lines"></div>
+        <br />
+    	<div id="forms">
+        	<form action="loginServlet" method="post" id="loginform">
+        	<div id="error">error</div>
+            <div id="user">
+            	<span class="text_1">用&nbsp;&nbsp;&nbsp;&nbsp;户：</span>
+            	<span>
+            	<input type="text" class="text" name="userid"/></span>
+            </div>
+            <br />
+			<div id="pass">
+            	<span class="text_1">密&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+                <span><input type="password" class="text" name="pass" /></span>
+            </div>
+            <br />
+          <!--   <div id="pass">
+            	<span class="text_1">验证码：</span>
+                <span><input type="text" name="kaptchaImage" style="width:100px;" /></span>
+                <span><img width="100px" /></span>
+            </div>
+            <br />
+             -->
+            <div id="pass2">
+             	<a href="" class="text_2">忘记密码</a>
+            </div>
+            <br />
+            <div id="btnb">
+            <!--  	<input type="button" class="btn" value="登录" onclick="docheck()" /> -->
+             	<input type="submit" class="btn" value="登录"  />
+            </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
